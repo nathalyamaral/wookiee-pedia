@@ -58,6 +58,15 @@ input:focus {
     outline: none;
 }
 
+#limittext{
+    display:block;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
 .section-padding {
     padding: 80px 0;
 }
@@ -1133,7 +1142,7 @@ nav {
 }
 
 .single-blog-post img {
-    width: 100%;
+    width: 27%;
 }
 
 .single-blog-post a h2 {

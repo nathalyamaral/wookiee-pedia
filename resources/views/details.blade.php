@@ -31,27 +31,7 @@
                 <div class="col-md-10 col-xs-9">
                     <!-- menu part -->
                     <div class="menu-part">
-                        <nav class="navbar navbar-default">
-                            <div class="container-fluid">
-                               
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                  </button>
-                                </div>
-                                
-                                <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
-                                    <ul class="nav navbar-nav">
-                                        <li class="active"><a class="nav-link" href="/">Home</a></li>
-                                        <li><a class="nav-link" href="#personagens">Personagens</a></li>
-                                    </ul>
-                                </div>
-                                <!-- /.navbar-collapse -->
-                            </div>
-                        </nav>
+                        
                     </div>
                 </div>
             </div>
@@ -85,7 +65,7 @@
                     <div class="blog-list">
                         <!-- single blog post details -->
                         <article class="single-blog-post">
-                            <img src="img/slider/{{$idimg}}.jpg" alt="">
+                            <img src="../../img/films/{{$idimg}}.jpg" alt="">
                             <a href="#">
                                 <h2>{{ $informationMovie['title'] }}</h2>
                             </a>
@@ -107,23 +87,39 @@
                         <div class="blog-comment-wraper">
                         <div class="row">
                             <div class="col-md-12">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a class="nav-link @if ($informationMovie['actionPage'] == 'personagem') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/personagem" id="people">Personagens</a>
-                                    </li>
-                                    <li >
-                                        <a class="nav-link @if ($informationMovie['actionPage'] == 'planetas') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/planetas">Planetas</a>
-                                    </li>
-                                    <li >
-                                        <a class="nav-link @if ($informationMovie['actionPage'] == 'especies') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/especies">Espécies</a>
-                                    </li>
-                                    <li >
-                                        <a class="nav-link @if ($informationMovie['actionPage'] == 'naves') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/naves">Naves</a>
-                                    </li>
-                                    <li >
-                                        <a class="nav-link @if ($informationMovie['actionPage'] == 'veiculos') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/veiculos">Veículos</a>
-                                    </li>
-                                </ul>
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                       
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                          </button>
+                                        </div>
+                                
+                                        <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav">
+                                                <li>
+                                                    <a class="nav-link @if ($informationMovie['actionPage'] == 'personagem') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/personagem" id="people">Personagens</a>
+                                                </li>
+                                                <li >
+                                                    <a class="nav-link @if ($informationMovie['actionPage'] == 'planetas') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/planetas">Planetas</a>
+                                                </li>
+                                                <li >
+                                                    <a class="nav-link @if ($informationMovie['actionPage'] == 'especies') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/especies">Espécies</a>
+                                                </li>
+                                                <li >
+                                                    <a class="nav-link @if ($informationMovie['actionPage'] == 'naves') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/naves">Naves</a>
+                                                </li>
+                                                <li >
+                                                    <a class="nav-link @if ($informationMovie['actionPage'] == 'veiculos') active @endif" href="/filmes/{{ preg_replace('/[^0-9]/', '', $informationMovie['url']) }}/veiculos">Veículos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
                                 
                                 <table class="table table-dark">
                                     <thead .thead-light>

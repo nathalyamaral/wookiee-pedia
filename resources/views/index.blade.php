@@ -46,7 +46,7 @@
                                 <div class="collapse navbar-collapse main-menu" id="bs-example-navbar-collapse-1">
                                     <ul class="nav navbar-nav">
                                         <li class="active"><a class="nav-link" href="#top">Home</a></li>
-                                        <li><a class="nav-link" href="#personagens">Personagens</a></li>
+                                       
                                     </ul>
                                 </div>
                                 <!-- /.navbar-collapse -->
@@ -97,8 +97,8 @@
 		                            <a href="#">
 		                                <h2> {{ $movieValue['title'] }}</h2>
 		                            </a>
-		                            <p>sínopse</p>
-		                            <a class="oxe-btn hvr-shutter-out-horizontal" href="/filmes/{{ preg_replace('/[^0-9]/', '', $movieValue['url']) }}" role="button">Continuar lendo</a>
+		                            <p id="limittext" align="justify">{{$movieValue['opening_crawl']}}</p>
+		                            <a class="oxe-btn hvr-shutter-out-horizontal" href="/filmes/{{ preg_replace('/[^0-9]/', '', $movieValue['url']) }}" role="button">Read More</a>
 		                        </div>
 		                    </article>
                     	@endforeach
