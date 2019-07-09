@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('components.menu.header', 'header');
         Blade::component('components.index.films', 'films');
         Blade::component('components.index.details', 'details');
+        Blade::component('components.index.principais', 'principais');
         Blade::component('components.footer', 'footer');
     }
 

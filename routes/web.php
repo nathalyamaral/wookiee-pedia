@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MoviesController@index');
+Route::get('filmes/{id}', 'MoviesController@findById')->where('id', '[0-9]+');
+Route::get('filmes/{id}/{type}', 'MoviesController@find')->where(['id' => '[0-9]+', 'type'=> '[A-Za-z]+']);

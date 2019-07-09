@@ -22,7 +22,6 @@ class MoviesController extends Controller
     public function index()
     {
         $Movie = $this->movies->allMovies();
-
         return view('index', compact('Movie'));
     }
 
@@ -32,8 +31,8 @@ class MoviesController extends Controller
 
         $informationMovie['translate'] = $this->translate->language('personagem','pt-br');
         $informationMovie['actionPage'] = 'personagem';
-
-        return view('details', compact('informationMovie'));
+        $idimg = $id; 
+        return view('details', compact('informationMovie', 'idimg'));
     }
 
     public function find($id, $type)
@@ -48,10 +47,10 @@ class MoviesController extends Controller
             return response()->view('errors.error404');
 
         }
-
+        $idimg = $id; 
         $informationMovie['actionPage'] = $type;
         
-        return view('details', compact('informationMovie'));
+        return view('details', compact('informationMovie', 'idimg'));
     }
 
     public function findByTitle($title)

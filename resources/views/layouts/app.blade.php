@@ -10,22 +10,33 @@
 
     <title>Wookiee-Pedia</title>
 
-    <link rel="stylesheet" href="{{ URL::asset('css/app.css')}}">
-    <script src="{{ asset('js/-----') }}"></script>
-
-    <style>
-        @media(min-width: 768px) {
-          .field-label-responsive {
-            padding-top: .5rem;
-            text-align: right;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <!-- vegas css -->
+    <link rel="stylesheet" href="{{ asset('css/vegas.min.css') }}">
+    <!-- hover css -->
+    <link rel="stylesheet" href="{{ asset('css/hover.css') }}">
+    <!-- typing css -->
+    <link rel="stylesheet" href="{{ asset('css/typing.css') }}">
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="{{ asset('css/lightbox.min.css') }}">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="{{ asset('css/normalize.css') }}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <!-- ======= All JS ======= -->
+    
 
 </head>
-    
-<body>
-    @header
-    @endheader
-</body>
+
 </html>
